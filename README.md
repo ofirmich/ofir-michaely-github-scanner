@@ -1,4 +1,4 @@
-Github scanner, using typescript and react (and a bit of js).
+Github scanner, using grpahql, typescript, javascript and react.
 
 Make it work on your computer-
 
