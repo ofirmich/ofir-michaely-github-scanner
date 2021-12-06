@@ -46,10 +46,10 @@ const Repository = ({repo, expanded, onToggled}) => {
         <div className={classes.summaryHeader}>
           <Typography variant={'h5'}><b>Repository name:</b> {repo.name}</Typography>
           <div>
-            <Chip variant="outlined" label={`By ${repo.owner.login}`} avatar={<PeopleIcon/>} className={classes.chip}/>
+            <Chip label={`By ${repo.owner.login}`} avatar={<PeopleIcon/>} className={classes.chip}/>
           </div>
           <div>
-          <Typography  variant={'h5'}><b>Disk usage:</b> {repo.diskUsage}</Typography>
+          <Typography variant={'h5'}><b>Disk usage:</b> {repo.diskUsage}</Typography>
           </div>
         </div>
         <Typography

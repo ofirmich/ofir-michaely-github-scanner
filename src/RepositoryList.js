@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {useQuery} from '@apollo/react-hooks';
-import {makeStyles, CircularProgress} from '@material-ui/core';
+import {Typography, makeStyles, CircularProgress} from '@material-ui/core';
 import {GET_REPOS} from './queries';
 import Repository from './Repository';
 
@@ -33,7 +33,6 @@ const RepositoryList = () => {
       </div>
     );
   }
-
 
 
   return (

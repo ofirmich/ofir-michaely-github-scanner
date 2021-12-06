@@ -18,11 +18,12 @@ const App = () => {
   const classes = useStyles();
   return (
     <ApolloProvider client={client}>
-      <Container maxWidth={'md'}>
-        <Typography variant={'h3'} className={classes.title}>Github Scanner</Typography>
-        <RepositoryList/> 
-      </Container>
-    </ApolloProvider>
+        <Container maxWidth={'md'}>
+          <Typography variant={'h3'} className={classes.title}>Github Scanner</Typography>
+          <RepositoryList/>
+
+       </Container>
+     </ApolloProvider>
   );
 };
 

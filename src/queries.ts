@@ -1,6 +1,5 @@
 import gql from 'graphql-tag';
 
-//
 export const GET_REPOS = gql`
   {
   user(login: "ofirmich") {
