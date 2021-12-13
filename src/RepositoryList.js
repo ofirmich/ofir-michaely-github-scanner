@@ -18,14 +18,18 @@ const useStyles = makeStyles({
 
 const RepositoryList = () => {
   const classes = useStyles();
-  const [expandedRepo, setExpandedRepo] = useState(null);
-  const {data, loading} = useQuery(GET_REPOS,
+  //useState - first element is the initial state and second one is a function that is used for updating the state.
+  const [expandedRepo, setExpandedRepo] = useState(null); 
+  const {data, loading} = useQuery(GET_REPOS
     );
 
-  useEffect(() => {
-    setExpandedRepo(null);
-  }, [data]);
 
+  useEffect(() => {
+    setExpandedRepo(data);
+  }, [data])
+
+
+  //loading mode
   if (loading) {
     return (
       <div className={classes.spinnerContainer}>

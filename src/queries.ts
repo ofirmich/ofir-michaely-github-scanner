@@ -1,6 +1,7 @@
 import gql from 'graphql-tag';
+// format and parse GraphQL queries
 
-export const GET_REPOS = gql`
+export const GET_REPOS = gql` 
   {
   user(login: "ofirmich") {
     repositories(first: 4 orderBy: {field:UPDATED_AT, direction: DESC} ) {
