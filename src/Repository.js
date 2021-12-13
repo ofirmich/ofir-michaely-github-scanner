@@ -26,7 +26,7 @@ const useStyles = makeStyles({
     
   },
   chip: {
-    marginLeft: '0.5rem'
+    marginLeft: '1rem'
   }
 });
 
@@ -36,6 +36,12 @@ const useStyles = makeStyles({
 const Repository = ({repo, expanded, onToggled}) => {
   const classes = useStyles();
   //return the data of each repository
+
+  /* ExpansionPane- 
+  expanded: If true, expands the accordion, otherwise collapse it.
+  onChange: Callback fired when the expand/collapse state is changed.
+  className: Override or extend the styles applied to the component.
+  */
   return (
     <ExpansionPanel
       expanded={expanded}
