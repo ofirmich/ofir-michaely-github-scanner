@@ -1,4 +1,6 @@
 import ApolloClient from 'apollo-boost';
+require('dotenv').config();
+
 
 const client = new ApolloClient({
   uri: 'https://api.github.com/graphql',
